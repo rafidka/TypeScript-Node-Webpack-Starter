@@ -11,12 +11,16 @@ It is configured with the following:
 In addition, the project has the following features:
 
 - WebPack is already configured for both client-side and server-side code.
-- [dotenv](https://www.npmjs.com/package/dotenv) is configured to allow the user to store configurations in the [.env](.env) file.
+- [dotenv](https://www.npmjs.com/package/dotenv) is configured to allow the user to store configurations in the `env` file.
 - When the app is run locally, changes to local files automatically initiate a rebuild, so you don't have to restart the server.
 - Unlike many other template/starter projects, the code is minimal so it is to start building on top of it, perhaps some little cleaning.
 - [tslint](https://palantir.github.io/tslint/) is used to reduce common problems in your TypeScript code.
 
-To try it out, run the following at the project's root directory after cloning it:
+To try it out, create a file named `.env` at the root and put the following content in it:
+```
+PORT=5000
+```
+then run the following at the project's root directory after cloning it:
 ```shell
 npm install
 npm run start
@@ -32,7 +36,7 @@ You should now see a folder called `dist`. To execute the bundled server code:
 node dist/server.js
 ```
 
-For more information on the other available commands, check the [package.json](file)
+For more information on the other available commands, check the [package.json](package.json)
 
 If you have any problem, feel free to create an issue and I will try to address it. If you would like to make a contribution, please fork and send a PR.
 
